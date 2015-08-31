@@ -1,11 +1,14 @@
 Windows installation
 
-Install or upgrade to Virtualbox 4.30 or 5.0 
+Install or upgrade to Virtualbox 5.0 
 https://www.virtualbox.org/wiki/Downloads
 
-Install the corresponding Virtualbox extension pack for the version of Virtualbox you picked.
+Install the corresponding Virtualbox extension pack for 5.0
 it comes from the same place
 https://www.virtualbox.org/wiki/Downloads
+
+it works with 4.3.30+ too if you have that already
+
 
 
 Install or upgrade to vagrant 1.7.4
