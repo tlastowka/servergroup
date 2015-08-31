@@ -1,0 +1,1 @@
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'@'10.0.11.%' IDENTIFIED BY 'repl_pass';
