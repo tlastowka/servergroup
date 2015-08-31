@@ -29,7 +29,9 @@ go to the directory you want to run from and clone the repo
 > vagrant up
 wait while vagrant does its thing.  if virtualbox asks you to install a driver click yes.
 
-when its done you'll have a mysql master that you can reach at 10.0.11.20
+when its done you'll have a mysql master that you can reach at 10.0.11.20:3306
+username:super
+password:superpass
 
 now switch to slave1
 
