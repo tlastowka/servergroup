@@ -22,7 +22,9 @@ From the start menu, run git bash
 go to the directory you want to run from and clone the repo
 
 > cd /whatever/dir/you/want
-> git clone <reponame>
+> git clone --recursive <reponame>
+
+Important! don't miss --recursive or you won't have the submodules
 
 > cd servergroup
 > cd master
