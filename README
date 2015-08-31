@@ -1,3 +1,5 @@
+Creates a mysql master and up to 3 slaves to test with using vagrant.
+
 Windows installation
 
 Install or upgrade to Virtualbox 5.0 
@@ -25,6 +27,13 @@ go to the directory you want to run from and clone the repo
 > git clone --recursive <reponame>
 
 Important! don't miss --recursive or you won't have the submodules
+
+
+Linux instalation isn't radically different
+
+
+USAGE:
+
 
 > cd servergroup
 > cd master
