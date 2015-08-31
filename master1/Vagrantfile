@@ -1,0 +1,28 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure(2) do |config|
+  # The most common configuration options are documented and commented below.
+  # For a complete reference, please see the online documentation at
+  # https://docs.vagrantup.com.
+
+  # Every Vagrant development environment requires a box. You can search for
+  # boxes at https://atlas.hashicorp.com/search.
+  config.vm.box = "ubuntu/vivid64"
+  config.vm.hostname = "master"
+  config.vm.network "private_network", ip:"10.0.11.20"
+    config.vm.provider "virtualbox" do |v|
+	v.memory = 2048
+  end
+  config.vm.provision :chef_solo do |chef|
+		chef.version = "12.3.0"
+		chef.cookbooks_path = '../cookbooks'
+		#chef.add_recipe "dbsetup::default"
+		chef.add_recipe "dbsetup::master"
+		#chef.add_recipe "db_install_sakila"
+  end
+end

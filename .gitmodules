@@ -1,0 +1,15 @@
+[submodule "cookbooks/mysql"]
+	path = cookbooks/mysql
+	url = https://github.com/opscode-cookbooks/mysql.git
+[submodule "cookbooks/yum"]
+	path = cookbooks/yum
+	url = https://github.com/opscode-cookbooks/yum.git
+[submodule "cookbooks/yum-mysql-community"]
+	path = cookbooks/yum-mysql-community
+	url = https://github.com/opscode-cookbooks/yum-mysql-community.git
+[submodule "cookbooks/rbac"]
+	path = cookbooks/rbac
+	url = https://github.com/livinginthepast/rbac
+[submodule "cookbooks/smf"]
+	path = cookbooks/smf
+	url = https://github.com/livinginthepast/smf
