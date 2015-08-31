@@ -1,6 +1,55 @@
-Install or upgrade to Virtualbox 4.30 or 5.0
-Install the corresponding Virtualbox extension pack for the version of Virtualbox you picked
+Windows installation
+
+Install or upgrade to Virtualbox 4.30 or 5.0 
+https://www.virtualbox.org/wiki/Downloads
+
+Install the corresponding Virtualbox extension pack for the version of Virtualbox you picked.
+it comes from the same place
 https://www.virtualbox.org/wiki/Downloads
 
 
-https://www.virtualbox.org/wiki/Downloads
+Install or upgrade to vagrant 1.7.4
+https://www.vagrantup.com/downloads.html
+
+install git bash 2.5.1 or higher
+https://git-for-windows.github.io/
+
+From the start menu, run git bash
+
+go to the directory you want to run from and clone the repo
+
+> cd /whatever/dir/you/want
+> git clone <reponame>
+
+> cd servergroup
+> cd master
+> vagrant up
+wait while vagrant does its thing.  if virtualbox asks you to install a driver click yes.
+
+when its done you'll have a mysql master that you can reach at 10.0.11.20
+
+now switch to slave1
+
+> cd ../slave1
+> vagrant up
+
+you now have a slave at 10.0.11.31
+
+> cd ../slave2
+> vagrant up
+
+you now have another slave at 10.0.11.32
+
+> cd ../slave3
+> vagrant up
+
+you now have a third slave at 10.0.11.33
+
+to stop one of them, switch to its directory and type
+
+> vagrant halt
+
+to delete the vm
+
+> vagrant destroy -f
+
